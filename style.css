@@ -68,6 +68,18 @@ body {
 .container .btn {
   display: flex;
   gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+#yes-btn {
+  position: relative;
+  z-index: 1;
+}
+
+#move-random {
+  position: fixed !important;
+  z-index: 999;
 }
 
 .container a {
@@ -82,5 +94,7 @@ body {
 }
 
 #move-random {
-  position: relative !important;
+  position: fixed !important;
+  transition: top 0.1s, left 0.1s;
+  z-index: 999;
 }
